@@ -1,1 +1,2 @@
-# TDEE-BMI-BMR-Calculator
+ # TDEE-BMI-BMR-Calculator 
+ This is an attempt to create calculators for TDEE (Total Daily Energy Expenditure), BMI (Body Mass Index) and BMR (Basal Metabolic Rate). For the moment, I will be working on the structure and layout only because I am still a beginner at web development and still learning the basics of Javascript. 
