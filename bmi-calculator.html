@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>BMI Calculator</h1>
+            <h2>System of measurement</h2>
+                <input type="radio" name="system-of-measurement" value="Imperial">
+                <label for="system-of-measurement">Imperial</label>
+                <input type="radio" name="system-of-measurement" value="Metric">
+                <label for="system-of-measurement">Metric</label>
+            <h2>Sex</h2>
+                <input type="radio" name="sex" value="Male">
+                <label for="sex">Male</label>
+                <input type="radio" name="sex" value="Female">
+                <label for="sex">Female</label>
+            <h2>Age</h2>
+                <input type="text" value="Years">
+            <h2>Weight</h2>
+                <input type="text">
+            <h2>Height</h2>
+                <input type="text">
+            <input type="button" value="Calculate">
+            <h2>BMI Table</h2>
+            <table>
+                <th>BMI Value</th>
+                <th>Classification</th>
+                <tr>
+                    <td>< 18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 25</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>25 - 30</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>> 30</td>
+                    <td>Obese</td>
+                </tr>
+            </table>
+    </body>
+</html>
