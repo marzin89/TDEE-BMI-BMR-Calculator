@@ -25,15 +25,25 @@
             <h2>Body fat (not required)</h2>
                 <input type="text" value="%">
             <h2>Activity level</h2>
+            <div id="sedentary">
                 <input type="radio" name="activity-level" value="Sedentary" checked="checked">
                 <label for="activity-level">Sedentary</label>
+            </div>
+            <div id="light">
                 <input type="radio" name="activity-level" value="Light (1-2 days per week">
                 <label for="activity-level">Light (1-2 days per week)</label>
+            </div>
+            <div id="moderate">
                 <input type="radio" name="activity-level" value="Moderate (3-5 days per week)">
                 <label for="activity-level">Moderate (3-5 days per week)</label>
+            </div>
+            <div id="intense">
                 <input type="radio" name="activity-level" value="Intense (more than 5 days per week)">
                 <label for="activity-level">Intense (more than 5 days per week)</label>
-            <input type="button" value="Calculate">
+            </div>
+            <div id="calculate-button">
+                <input type="button" value="Calculate">
+            </div>
         </div>
     </body>
 </html>

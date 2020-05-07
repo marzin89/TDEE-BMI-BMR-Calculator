@@ -6,5 +6,9 @@
     border-style: solid;
     border-radius: 20px;
     border-color: black;
-    padding: 20px;
+    padding: 30px;
+}
+#calculate-button {
+    display: block;
+    margin-top: 25px;
 }
