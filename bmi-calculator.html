@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="tdee-bmi-bmr.css">
+        <script src="bmi-calculator.js"></script>
+    </head>
     <body>
+        <div id="body">
         <h1>BMI Calculator</h1>
             <h2>System of measurement</h2>
-                <input type="radio" name="system-of-measurement" value="Imperial">
+                <input type="radio" name="system-of-measurement" value="Imperial" id="system-of-measurement">
                 <label for="system-of-measurement">Imperial</label>
                 <input type="radio" name="system-of-measurement" value="Metric" checked="checked">
                 <label for="system-of-measurement">Metric</label>
@@ -15,9 +20,9 @@
             <h2>Age</h2>
                 <input type="text" value="Years">
             <h2>Weight</h2>
-                <input type="text" value="kg">
+                <input type="text" value="kg" id="weight">
             <h2>Height</h2>
-                <input type="text" value="cm">
+                <input type="text" value="cm" id="height">
             <input type="button" value="Calculate">
             <h2>BMI Table</h2>
             <table>
@@ -40,5 +45,6 @@
                     <td>Obese</td>
                 </tr>
             </table>
+        </div>
     </body>
 </html>
