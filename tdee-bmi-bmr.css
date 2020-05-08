@@ -11,4 +11,10 @@
 #calculate-button {
     display: block;
     margin-top: 25px;
+    font-size: medium;
+    padding: 7px;
+}
+#age, #weight, #height, #body-fat {
+    font-size: medium;
+    padding: 7px;
 }
