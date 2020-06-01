@@ -12,9 +12,24 @@
     display: block;
     margin-top: 25px;
     font-size: medium;
-    padding: 7px;
+    padding: 10px;
+    color: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
 }
 #age, #weight, #height, #body-fat {
     font-size: medium;
     padding: 7px;
+}
+th, tr, td {
+    border-style: solid;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px;
+    font-size: medium;
+    padding: 7px;
+}
+tr,td {
+    text-align: right;
 }

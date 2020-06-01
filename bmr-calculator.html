@@ -7,9 +7,9 @@
         <div id="body">
         <h1>BMR Calculator</h1>
         <h2>System of measurement</h2>
-            <input type="radio" name="system-of-measurement" value="Imperial">
+            <input type="radio" name="system-of-measurement" value="Imperial" onclick="updateToImperial()">
             <label for="system-of-measurement">Imperial</label>
-            <input type="radio" name="system-of-measurement" value="Metric" checked="checked">
+            <input type="radio" name="system-of-measurement" value="Metric" checked="checked" onclick="updateToMetric()">
             <label for="system-of-measurement">Metric</label>
         <h2>Sex</h2>
             <input type="radio" name="sex" value="Male">
@@ -28,5 +28,6 @@
             <input type="button" value="Calculate" id="calculate-button">
         </div>
         </div>
+        <script src="tdee-bmi-bmr.js"></script>
     </body>
 </html>
