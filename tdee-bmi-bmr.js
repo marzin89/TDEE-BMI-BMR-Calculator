@@ -6,7 +6,7 @@ function updateToImperial() {
 
     weight.value = 'lbs';
         
-    height.value = 'ft\' in"';
+    height.value = 'in';
 
 }
 
@@ -18,7 +18,7 @@ function updateToMetric() {
 
     weight.value = 'kg';
 
-    height.value = 'cm';
+    height.value = 'm';
 
 }
 
