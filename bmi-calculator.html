@@ -7,9 +7,9 @@
         <div id="body">
         <h1>BMI Calculator</h1>
             <h2>System of measurement</h2>
-                <input type="radio" name="system-of-measurement" value="Imperial" onclick="updateToImperial()">
+                <input type="radio" name="system-of-measurement" value="Imperial" id="Imperial" onclick="updateToImperial()">
                 <label for="system-of-measurement">Imperial</label>
-                <input type="radio" name="system-of-measurement" value="Metric" checked="checked" onclick="updateToMetric()">
+                <input type="radio" name="system-of-measurement" value="Metric" id="Metric" checked="checked" onclick="updateToMetric()">
                 <label for="system-of-measurement">Metric</label>
             <h2>Sex</h2>
                 <input type="radio" name="sex" value="Male">
@@ -25,7 +25,7 @@
                 <input type="text" value="cm" id="height">
             </div>
             <div>
-                <input type="button" value="Calculate" id="calculate-button">
+                <input type="button" value="Calculate" id="calculate-button" onclick="calculateBMI()">
             </div>
             <h2>BMI Table</h2>
             <table cellspacing="0">
