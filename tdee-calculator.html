@@ -7,14 +7,14 @@
         <div id="body">
         <h1>TDEE Calculator</h1>
             <h2>System of measurement</h2>
-                <input type="radio" name ="system-of-measurement" value="Imperial" onclick="updateToImperial()">
+                <input type="radio" name ="system-of-measurement" value="Imperial" id="Imperial" onclick="updateToImperial()">
                 <label for="system-of-measurement">Imperial</label>
-                <input type="radio" name="system-of-measurement" value="Metric" checked="checked" onclick="updateToMetric()">
+                <input type="radio" name="system-of-measurement" value="Metric" id="Metric" checked="checked" onclick="updateToMetricBMR()">
                 <label for="system-of-measurement">Metric</label>
             <h2>Sex</h2>
-                <input type="radio" name="sex" value="Male">
+                <input type="radio" name="sex" value="Male" id="Male">
                 <label for="sex">Male</label>
-                <input type="radio" name="sex" value="Female" checked="checked">
+                <input type="radio" name="sex" value="Female" id="Female" checked="checked">
                 <label for="sex">Female</label>
             <h2>Age</h2>
                 <input type="text" value="Years" id="age">
@@ -26,23 +26,23 @@
                 <input type="text" value="%" id="body-fat">
             <h2>Activity level</h2>
             <div id="sedentary">
-                <input type="radio" name="activity-level" value="Sedentary" checked="checked">
+                <input type="radio" name="activity-level" value="Sedentary" id="Sedentary" checked="checked">
                 <label for="activity-level">Sedentary</label>
             </div>
             <div id="light">
-                <input type="radio" name="activity-level" value="Light (1-2 days per week">
+                <input type="radio" name="activity-level" value="Light (1-2 days per week" id="Light">
                 <label for="activity-level">Light (1-2 days per week)</label>
             </div>
             <div id="moderate">
-                <input type="radio" name="activity-level" value="Moderate (3-5 days per week)">
+                <input type="radio" name="activity-level" value="Moderate (3-5 days per week)" id="Moderate">
                 <label for="activity-level">Moderate (3-5 days per week)</label>
             </div>
             <div id="intense">
-                <input type="radio" name="activity-level" value="Intense (more than 5 days per week)">
+                <input type="radio" name="activity-level" value="Intense (more than 5 days per week)" id="Intense">
                 <label for="activity-level">Intense (more than 5 days per week)</label>
             </div>
             <div>
-                <input type="button" value="Calculate" id="calculate-button">
+                <input type="button" value="Calculate" id="calculate-button" onclick="calculateTDEE()">
             </div>
         </div>
         <script src="tdee-bmi-bmr.js"></script>
