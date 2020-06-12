@@ -56,9 +56,9 @@ function calculateBMI() {
 
     } else if ( metric.checked == true ) {
 
-        result = 'Your BMI is ' + Math.round( weight.value / 
+        result = 'Your BMI is ' + Math.round( weight.value / height.value / 
             
-            ( height.value * height.value )) + '.';
+            height.value * 10000 ) + '.';
 
         alert( result );
 

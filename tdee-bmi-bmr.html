@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="tdee-bmi-bmr.css">
+    </head>
+    <body>
+        <div id="body">
+        <h1>TDEE/BMI/BMR Calculator</h1>
+            <h2>System of measurement</h2>
+                <input type="radio" name ="system-of-measurement" value="Imperial" id="Imperial" onclick="updateToImperial()">
+                <label for="system-of-measurement">Imperial</label>
+                <input type="radio" name="system-of-measurement" value="Metric" id="Metric" checked="checked" onclick="updateToMetricBMR()">
+                <label for="system-of-measurement">Metric</label>
+            <h2>Gender</h2>
+                <input type="radio" name="sex" value="Male" id="Male">
+                <label for="sex">Male</label>
+                <input type="radio" name="sex" value="Female" id="Female" checked="checked">
+                <label for="sex">Female</label>
+            <h2>Age</h2>
+                <input type="text" value="Years" id="age">
+            <h2>Weight</h2>
+                <input type="text" value="kg" id="weight">
+            <h2>Height</h2>
+                <input type="text" value="cm" id="height">
+            <h2>Activity level</h2>
+            <div id="sedentary">
+                <input type="radio" name="activity-level" value="Sedentary" id="Sedentary" checked="checked">
+                <label for="activity-level">Sedentary</label>
+            </div>
+            <div id="light">
+                <input type="radio" name="activity-level" value="Light (1-2 days per week" id="Light">
+                <label for="activity-level">Light (1-2 days per week)</label>
+            </div>
+            <div id="moderate">
+                <input type="radio" name="activity-level" value="Moderate (3-5 days per week)" id="Moderate">
+                <label for="activity-level">Moderate (3-5 days per week)</label>
+            </div>
+            <div id="intense">
+                <input type="radio" name="activity-level" value="Intense (more than 5 days per week)" id="Intense">
+                <label for="activity-level">Intense (more than 5 days per week)</label>
+            </div>
+            <div>
+                <input type="button" value="Calculate TDEE" id="calculate-tdee" onclick="calculateTDEE()">
+            </div>
+            <div>
+                <input type="button" value="Calculate BMI" id="calculate-bmi" onclick="calculateBMI()">
+            </div>
+            <div>
+                <input type="button" value="Calculate BMR" id="calculate-bmr" onclick="calculateBMR()">
+            </div>
+            <h2>BMI Table</h2>
+            <table cellspacing="0">
+                <th>BMI Value</th>
+                <th>Classification</th>
+                <tr>
+                    <td>< 18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 25</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>25 - 30</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>> 30</td>
+                    <td>Obese</td>
+                </tr>
+            </table>
+        </div>
+        <script src="tdee-bmi-bmr.js"></script>
+    </body>
+</html>

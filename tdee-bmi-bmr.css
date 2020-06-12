@@ -8,7 +8,7 @@
     border-color: black;
     padding: 30px;
 }
-#calculate-button {
+#calculate-tdee, #calculate-bmi, #calculate-bmr {
     display: block;
     margin-top: 25px;
     font-size: medium;
@@ -18,7 +18,7 @@
     border-radius: 5px;
     border-width: 1px;
 }
-#age, #weight, #height, #body-fat {
+#age, #weight, #height {
     font-size: medium;
     padding: 7px;
 }
